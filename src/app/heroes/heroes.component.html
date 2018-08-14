@@ -3,7 +3,7 @@
 
 <div>
     <label>Hero name:
-      <input $heroName />
+      <input #heroName />
     </label>
     <!-- (click) passes input value to add() and then clears the input -->
     <button (click)="add(heroName.value); heroName.value='' ">
@@ -17,7 +17,7 @@
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
     <button class="delete" title="delete hero"
-    (click) = "delete(hero)">x</button>
+    (click) = "delete(hero)">X</button>
   </li>
 </ul>
 
